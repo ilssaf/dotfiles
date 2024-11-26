@@ -1,0 +1,25 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.bloop": true,
+        "**/.bsp": true,
+        "**/.idea": true,
+        "**/.metals": true,
+        "**/.scala-build": true,
+        "**/.venv": true,
+        "**/.vscode": true
+    },
+    "explorer.confirmDelete": false,
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true,
+        "**/.ammonite": true
+    },
+    "editor.fontSize": 15,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "pustota",
+    "explorer.confirmDragAndDrop": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultFormatter": "scalameta.metals",
+    "terminal.integrated.fontSize": 15
+}
