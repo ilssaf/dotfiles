@@ -1,0 +1,155 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.fixAll": ["source.unusedImports"],  
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.cache": true,
+        "**/.coverage": true,
+        "**/.coverage.*": true,
+        "**/.hypothesis": true,
+        "**/.mypy_cache": true,
+        "**/.nox": true,
+        "**/.pytest_cache": true,
+        "**/.ruff_cache": true,
+        "**/.tox": true,
+        "**/.vscode": true,
+        "**/.venv": true,
+        "**/*.egg-info": true,
+        "**/dist": true,
+        "*.idx":true,
+        "*.ilg":true,
+        "*.ind":true,
+        "*.aux":true,
+        "*.bbl":true,
+        "*.blg":true,
+        "*.bcf":true,
+        "*.log":true,
+        "*.out":true,
+        "*.run.xml":true,
+        "*.synctex.gz":true,
+        "*.tec":true,
+        "*.toc":true,
+        "*.tuc":true,
+        "*.doc":true,
+        "*.docx":true,
+        "*.dvi":true,
+        "*.fdb_latexmk":true,
+        "*.fls":true,
+        "*.bbl-SAVE-ERROR":true,
+
+    },
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 13,
+    "git.autofetch": true,
+    "window.zoomLevel": 0,
+    "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit",
+    },
+  },
+  "workbench.colorTheme": "Visual Studio Light",
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "latex-workshop.latex.tools": [
+  {
+    "name": "latexmk",
+    "command": "latexmk",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "-pdf",
+      "-outdir=%OUTDIR%",
+      "%DOC%"
+    ],
+    "env": {}
+  },
+  {
+    "name": "pdflatex",
+    "command": "pdflatex",
+    "args": [
+      "-synctex=1",
+      "-interaction=nonstopmode",
+      "-file-line-error",
+      "%DOC%"
+    ],
+    "env": {}
+  },
+  {
+    "name": "bibtex",
+    "command": "bibtex",
+    "args": [
+      "%DOCFILE%"
+    ],
+    "env": {}
+  }
+],
+"[latex]": {
+  "editor.defaultFormatter": "James-Yu.latex-workshop",
+  "editor.formatOnSave": true
+},
+"latex-workshop.formatting.latex": "latexindent",
+"explorer.confirmDelete": false,
+"ruff.organizeImports": true,
+"diffEditor.ignoreTrimWhitespace": false,
+"[jinja-sql]": {
+  "editor.defaultFormatter": "yassun7010.vscode-shandy-sqlfmt"
+},
+"github.copilot.nextEditSuggestions.enabled": true,
+"extensions.ignoreRecommendations": true,
+"[json]": {
+  "editor.defaultFormatter": "vscode.json-language-features"
+},
+"gitlens.ai.model": "vscode",
+"gitlens.ai.vscode.model": "copilot:claude-sonnet-4",
+
+// "sqlfluff.experimental.format.executeInTerminal": true,
+// "sqlfluff.linter.run": "onSave",
+// "sqlfluff.executablePath": "/Users/hamidullin_ii/repos/dags-dwh/.venv/bin/sqlfluff",
+// "sqlfluff.dialect": "greenplum",
+// "sqlfluff.config": "/Users/hamidullin_ii/repos/dags-dwh/.sqlfluff",
+
+
+  "terminal.integrated.profiles.osx": {
+    "dbt-ch": {
+      "path": "zsh",
+      // "icon": "terminal-bash",
+      "args": [
+        "-c",
+        "source ~/.zshrc && source ./venv/bin/activate && exec ${SHELL:-zsh}"
+      ],
+      "icon": "terminal"
+    }
+  },
+   "editor.fontFamily": "JetBrains Mono",
+
+   "custom-ui-style.stylesheet": {
+    // Hide extra items:
+    // ".monaco-toolbar, .quick-input-list .scrollbar, .quick-input-list .action-label": {
+    //   "visibility": "hidden !important",
+    //   "display": "none !important",
+    // },
+    // Center the title with the filename:
+    ".monaco-workbench .editor-group-container>.title>.label-container>.title-label>.monaco-icon-label-container": {
+      "margin-left": "50px !important",
+    },
+    // Offset terminal title:
+    ".composite.title.has-composite-bar": {
+      "margin-left": "50px !important",
+    },
+    // Remove "Merge in merge editor" button
+    ".floating-click-widget": {
+      "visibility": "hidden !important",
+      "display": "none !important",
+    },
+  },
+}
