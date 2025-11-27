@@ -14,7 +14,7 @@
         "**/.ruff_cache": true,
         "**/.tox": true,
         "**/.vscode": true,
-        "**/.venv": true,
+        // "**/.venv": true,
         "**/*.egg-info": true,
         "**/dist": true,
         "*.idx":true,
@@ -56,7 +56,7 @@
       "source.organizeImports": "explicit",
     },
   },
-  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "Default Light Modern",
   "git.confirmSync": false,
   "explorer.confirmDragAndDrop": false,
   "latex-workshop.latex.tools": [
@@ -111,14 +111,6 @@
 },
 "gitlens.ai.model": "vscode",
 "gitlens.ai.vscode.model": "copilot:claude-sonnet-4",
-
-// "sqlfluff.experimental.format.executeInTerminal": true,
-// "sqlfluff.linter.run": "onSave",
-// "sqlfluff.executablePath": "/Users/hamidullin_ii/repos/dags-dwh/.venv/bin/sqlfluff",
-// "sqlfluff.dialect": "greenplum",
-// "sqlfluff.config": "/Users/hamidullin_ii/repos/dags-dwh/.sqlfluff",
-
-
   "terminal.integrated.profiles.osx": {
     "dbt-ch": {
       "path": "zsh",
@@ -152,4 +144,10 @@
       "display": "none !important",
     },
   },
+  "gitlab.ignoreCertificateErrors": false,
+  "http.proxyStrictSSL": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 3,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyleInactive": "line"
 }
